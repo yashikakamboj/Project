@@ -9,6 +9,7 @@ import { registerRootComponent } from 'expo';
 import HomeScreen from './src/screens/HomeScreen';
 import Fruits from './src/screens/Fruits';
 import Crop from './src/screens/crop';
+import Fss from './src/screens/Fss';
 
 const Navigation = createStackNavigator(
   {
@@ -17,7 +18,9 @@ const Navigation = createStackNavigator(
       Details: Ds,
       Flowers : Fs,
       Fruit : Fruits,
-      Crop: Crop
+      Crop: Crop,
+      Fss: Fss,
+      
   },
   {
     initialRouteName: 'Home',

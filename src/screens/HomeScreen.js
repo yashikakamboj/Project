@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
         fontFamily: 'sans-serif-condensed',
         color: '#008b8b',                    // d5c5c#c
         fontSize: 20,
-        
-        
+        backgroundColor: '#ecc6d9',
+        //marginBottom: 0
     },
     img: {
         width: 150,

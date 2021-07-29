@@ -4,6 +4,7 @@ import AppContent from '../context/AppContext';
 
 
 const StateWiseScreen = ({navigation})=>{
+
     const {data} = useContext(AppContent);
 
     return(

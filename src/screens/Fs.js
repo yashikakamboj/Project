@@ -17,7 +17,7 @@ const Fs = ({navigation})=>{
                     return (
                         <View style={styles.second}>
                            {/*<YouTubePlayer
-                                ref ={ref=>{this.YouTubePlayer= ref}} 
+                                ref ={ref=>{this.YouTubePlayer= ref}}        Linking.openURL(item.url)
                                 //onError={e=> console.log(e)}
                                 style ={{width: "100%", height: "100%"}}
                                 autoPlay={true}
@@ -25,9 +25,9 @@ const Fs = ({navigation})=>{
                                 videoId="phsMXM4vtz8"
                            /> */}
                             
-                            <TouchableOpacity style={styles.button} onPress={()=>{ Linking.openURL(item.url) }}>
+                            <TouchableOpacity style={styles.button} onPress={()=>{ navigation.navigate('Fss', {id: item.id}) }}>
                                 <Image style={styles.img} source={item.image} />  
-                                <Text style={styles.text}> {item.common} </Text>
+                                <Text style={styles.text}> {item.common}</Text>
                             </TouchableOpacity>
                         </View>
                 );
